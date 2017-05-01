@@ -1,11 +1,26 @@
+
+canvas {  /*fyrir three js tening */
+	width: 100%; 
+	height: 100% 
+}
+
+#container { /*fyrir three js tening */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;  
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: #222;
 	font-weight: 500;
- 	background-image:  url(../images/HallgrimStill1.jpg);
+ 	/*background-image:  url(../images/HallgrimStill1.jpg);*/
  	background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #f0f0f0;
+    overflow: hidden;
  }
 a {
  	color: yellow;
@@ -50,11 +65,86 @@ a:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*svg soundIcon */
+section.soundIcon #Layer_1 {
+	fill:none;
+	stroke:#fff;
+	stroke-width:2;
+	stroke-miterlimit:10; /*meðferðin a hornunum*/
+	stroke-dasharray: 460; /*all er komið*/
+	stroke-dashoffset: 460; /*all er falið*/
+	animation: teikna 2s ease-in-out forwards 1s;
+	max-width: 70px;
+	height: auto;
+	margin: 0;
+	position: absolute;
+    top: 86%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)	
+}
+
+section.soundIcon .st0.l1 {
+	animation-delay: 0.1s;
+}
+section.soundIcon .st0.l2 {
+	animation-delay: 0.4s;
+}
+section.soundIcon .st0.l3 {
+	animation-delay: 0.7s;
+}
+section.soundIcon .st0.l4 {
+	animation-delay: 1.0s;
+}
+section.emotion .st0.l5 {
+	animation-delay: 1.3s;
+}
+section.soundIcon .st0.l6 {
+	animation-delay: 1.6s;
+}
+section.soundIcon .st0.l7 {
+	animation-delay: 1.9s;
+}
+section.soundIcon .st0.l8 {
+	animation-delay: 2.2s;
+}
+
+@keyframes teikna {
+	from {
+
+	}
+	to {
+		stroke-dashoffset: 0; /*núllstilla*/
+	}
+}
+
+/*texti undir sound Icon*/
+section.hTextWithSoundIcon p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	z-index:1000;
+	position: absolute;
+    top: 92%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: emotionText 2s ease-in-out forwards 1s;
+}
 
 
+@keyframes emotionText {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+}
 
 
-
+/*play button á three js tening*/
 
 
 
