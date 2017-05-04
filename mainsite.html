@@ -4,15 +4,18 @@
 	<title>Rok í Reykjavík</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Javascript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/utils/Draggable.min.js" ></script>
+	<script type="text/javascript" src="js/foundation.min.js"></script>
+	<script type="text/javascript" src="js/covervid.js"></script>
+
 	<!-- Stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<!-- Javascript -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/foundation.min.js"></script>
-	<script type="text/javascript" src="js/covervid.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+
 </head>
 <body>
 	<div class="video-bg">
@@ -21,14 +24,36 @@
 		</video>
 	</div>
 	<div class="row zindex align-top">
-		<div class="columns align-left" id="rirLogo">
+		<div class="zindex align-left" id="rirLogo">
 			<img class=" small-12 medium-6" src="images/Logo-Lagað-Hvítt.png" alt="Rok í Reykjavík logo">
 		</div>
 	</div>
-	<div class="wrapper1">
-		<div class="zindex columns dalkur shadow" ></div>
-	</div>
 
+	<section class="">
+		<div class="row align-right ">
+			<div class="dalkur shadow large-3 small-4" ></div>
+			<div class="zindex large-3 small-4 cube-image-div">
+				<a href=""><img src="images/cube.png" class="cube-icon"></a> <!-- setja A link inn, annað hvort forsíða eða pop-up -->
+			</div>
+			<div  id="rotation"></div>
+			<div class="knob large-3 small-2"></div>
+		</div>
+		<div class="row align-right">
+			<div  id="rotation"></div>
+			<div class="knob large-3 small-2"></div>
+		</div>
+		<div class="row  align-right">
+			<div  id="rotation"></div>
+			<div class="knob large-3 small-2"></div>
+		</div>
+		<div class="row  align-right">
+			<div  id="rotation"></div>
+			<div class="knob large-3 small-2"></div>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
 
