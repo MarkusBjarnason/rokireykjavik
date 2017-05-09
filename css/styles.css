@@ -37,7 +37,68 @@ a:hover {
  }
 
 
+ .headline {
+ 	position: absolute;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+ }
 
+ .headlineRain {
+ 	position: absolute;
+	height: auto;
+	top: 35%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+ }
+
+
+.headlineNoise {
+ 	position: absolute;
+	height: auto;
+	top: 66.5%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+ }
+
+.VolumeOnButton p {
+	font-size: 11px;
+	word-spacing: 60px;
+	position: absolute;
+	height: auto;
+	top: 34%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+.Volume2OnButton p {
+	font-size: 11px;
+	word-spacing: 60px;
+	position: absolute;
+	height: auto;
+	top: 49%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+.Volume3OnButton p {
+	font-size: 11px;
+	word-spacing: 60px;
+	position: absolute;
+	height: auto;
+	top: 63%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
 
 .center {
 	text-align: center;
@@ -185,11 +246,7 @@ section.soundIcon .st0.l8 {
 	align-items: center;
 }
 
-#Layer_1 image{
-	width: 100%;
-	max-width: 990px;
-	position: absolute;
-}
+
 
 /*.knob-surround {
   	position: relative;
@@ -215,7 +272,7 @@ section.soundIcon .st0.l8 {
   	/*position: absolute;*/
   	z-index: 1000000;
   	margin: auto;
-  	margin-top: 20px;
+  	margin-top: 60px;
   	max-width: 5em;
   	height: 5em;
   	border-radius: 50%;
@@ -241,9 +298,20 @@ section.soundIcon .st0.l8 {
 	/*background: linear-gradient(to bottom, #4c4c4c 0%,#474747 6%,#474747 6%,#2b2b2b 42%,#2b2b2b 42%,#2b2b2b 42%,#131313 95%,#131313 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
 
-.rain-icon{
+
+
+.rain-icon {
+	position: absolute;
 	width: 65%;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
+
+
+
+
 /**********************************************************
 ABOUT SÍÐA --- gat ekki haft þetta undir keyframes- virkaði ekki ....
 **********************************************************
