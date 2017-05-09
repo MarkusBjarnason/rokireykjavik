@@ -36,7 +36,6 @@ a:hover {
  	color: orange;
  }
 
-
  .headline {
  	position: absolute;
 	height: auto;
@@ -55,7 +54,6 @@ a:hover {
 	transform: translate(-50%, -50%)
  }
 
-
 .headlineNoise {
  	position: absolute;
 	height: auto;
@@ -64,7 +62,6 @@ a:hover {
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-
  }
 
 .VolumeOnButton p {
@@ -103,7 +100,6 @@ a:hover {
 .center {
 	text-align: center;
 }
-
 
 .video-bg {
 	width: 100%;
@@ -145,8 +141,6 @@ a:hover {
     transform: translate(-50%, -50%);
     background-color: #F2C94C;
 }
-
-
 
 
 /*a:active {
@@ -267,7 +261,6 @@ section.soundIcon .st0.l8 {
 
 }
 
-
 .knob {
   	/*position: absolute;*/
   	z-index: 1000000;
@@ -281,9 +274,7 @@ section.soundIcon .st0.l8 {
 	background: linear-gradient(top, #4c4c4c 0%,#474747 6%,#474747 6%,#2b2b2b 42%,#2b2b2b 42%,#2b2b2b 42%,#131313 95%,#131313 95%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #4c4c4c 0%,#474747 6%,#474747 6%,#2b2b2b 42%,#2b2b2b 42%,#2b2b2b 42%,#131313 95%,#131313 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */*/
-
 }
-
 
 .knob:after {
   	content: "";
