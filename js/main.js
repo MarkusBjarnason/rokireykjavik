@@ -192,9 +192,9 @@ window.onload = function (event) {
 
 
 var knob = $('.knob');
-var angle = 70;
-var minangle = 70;
-var maxangle = 290;
+var angle = 0;
+var minangle = 0;
+var maxangle = 260;
 
 function moveKnob(direction) {
   
@@ -225,16 +225,7 @@ function setAngle() {
     'transform':'rotate('+angle+'deg)'
   });
 };
-  // highlight ticks
-//   var activeTicks = (Math.round(angle / 10) + 1);
-//   $('.tick').removeClass('activetick');
-//   $('.tick').slice(0,activeTicks).addClass('activetick');
-  
-//   // update % value in text
-//   var pc = Math.round((angle/270)*100);
-//   $('.current-value').text(pc+'%');
-  
-// }
+ 
 
 // mousewheel event - firefox
 knob.bind('DOMMouseScroll', function(e){
@@ -256,11 +247,13 @@ knob.bind('mousewheel', function(e){
   return false;
 });
 
+
   
 //kóði til þess draga takkana 
 Draggable.create(".knob", {
   type: "rotation",
   throwProps: true,
+    bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
     console.log(this.rotation)
   }
