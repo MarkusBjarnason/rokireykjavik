@@ -43,9 +43,29 @@ window.onload = function (event) {
 
             function render(e) {
 
-               console.log(e.target);
+                console.log(e.target);
                   
-            }
+             }
+
+
+        // x.x(function(child) {
+        // var y = document.getElementById("#seeMore").selectedIndex * 5 - 10;
+        //   if (y === -10) {
+        //     child.visible = true;
+        //   } else if (child.position.y !== y) {
+        //     child.visible = false;
+        //   } else {
+        //     child.visible = true;
+        //   };
+        // });
+
+
+
+
+
+
+
+
 
         //setja inn myndir á fletina
         const textureLoader = new THREE.TextureLoader(); //er ekki best að nota const hér?
@@ -80,8 +100,8 @@ window.onload = function (event) {
         }
 
 
-        // $("#seeMore").on("update",function(e){
-        //     console.log(e)});
+         // $("#seeMore").on("update",function(e){
+         //     console.log(e)});
 
 
         function textureLoadAbout(texture) { //flötur með mynd á about síðu
