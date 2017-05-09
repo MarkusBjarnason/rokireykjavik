@@ -384,7 +384,7 @@ section.hTextWithSoundIcon p {
 	top: 50%;
     transform: translateY(-50%);
     position: absolute;
-    left: 0;
+    left: 100px;
     z-index: 1;
     display: inline-block;
     width: 0.8rem;
@@ -398,14 +398,14 @@ section.hTextWithSoundIcon p {
 
 .slider {
     position: absolute;
-    width: 20%;
+    width: 200px;
     height: .5rem;
     top: 600px;
-    right: 100px;
+    right: 150px;
    	/*margin-top: 1.25rem;
    	margin-bottom: 2.25rem;*/
 
-    background-color: #000;
+    background-color: #020202;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -423,7 +423,7 @@ section.hTextWithSoundIcon p {
     display: inline-block;
     max-width: 100%;
     height: .5rem;
-    background-color: #000;
+    background-color: #020202;
     transition: all .2s ease-in-out;
 }
 foundation.min.css:2
