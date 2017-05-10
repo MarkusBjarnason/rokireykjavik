@@ -4,7 +4,8 @@ Math.radians = function(degrees) {
   return degrees * Math.PI / 180;
 };
 
-window.onload = function (event) {
+window.onload = function (event) { // onload er event - TThe onload event occurs when an object has been loaded. 
+    //Onload is most often used within the <body> element to execute a script once a web page has completely loaded all content (including images, script files, CSS files, etc.)
     
     // variables 
     var camera, scene, renderer;
@@ -34,11 +35,11 @@ window.onload = function (event) {
         // Búa til myndavél og staðsetja hana á fletinum 
         camera = new THREE.PerspectiveCamera(130, window.innerWidth / window.innerHeight, 0.01, 1000);
         camera.position.set(0, 50, 200); // sjónarhorn á kassa
-        camera.lookAt(new THREE.Vector3()) //því það eru 3 ásar
+        camera.lookAt(new THREE.Vector3()) //eða á þetta að vera camera.lookAt(scene.position);
         scene.add(camera);
         
         // Stjórna með músarhreyfingu
-        controls = new THREE.OrbitControls(camera, element);
+        controls = new THREE.OrbitControls(camera, element); //hreyfa cameru og element?
          controls.addEventListener( 'change', render );
 
             function render(e) {
@@ -58,13 +59,6 @@ window.onload = function (event) {
         //     child.visible = true;
         //   };
         // });
-
-
-
-
-
-
-
 
 
         //setja inn myndir á fletina
@@ -94,10 +88,15 @@ window.onload = function (event) {
             plane.position.x= -75;
             plane.position.z= 70;
             scene.add(plane);
-          
-            
-        
         }
+
+
+
+
+
+
+
+
 
 
          // $("#seeMore").on("update",function(e){
@@ -191,6 +190,10 @@ window.onload = function (event) {
 
 
 
+
+
+
+
 var knob = $('.knob');
 var angle = 0;
 var minangle = 0;
@@ -261,7 +264,10 @@ Draggable.create(".knob", {
 
 
 
-
+// While dragging the svg element, change the color of the svg
+ // document.addEventListener("drag", function(event) {
+ //     document.getElementById("rain-icon").{fill:#fff;}
+ // });
 
 
 
