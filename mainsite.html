@@ -4,6 +4,8 @@
 	<title>Rok í Reykjavík</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="See the weather change in Reykjavík! Rok í Reykjavík gives you the feeling of how weather in Reykjavík can be. ">
+    <meta name="keywords" content="Icelandic weather, control the weather, rain, control rain, rok, rok í Reykjavík">
 	
 	<!-- Javascript -->
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
@@ -11,11 +13,20 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/utils/Draggable.min.js" ></script>
 	<script type="text/javascript" src="js/foundation.min.js"></script>
 	<script type="text/javascript" src="js/covervid.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-98896094-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
 	
 	<!-- Stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/mainsite.css">
 </head>
 <body>
 	<div class="video-bg"><!-- bakgrunnsvideo/mynd -->
@@ -33,6 +44,7 @@
 			<link rel="stylesheet" type="text/css" href="css/logo-svg.css">
 			<img id="ogol" src="images/Logo-Lagað-Hvítt.png" alt="Rok í Reykjavík logo">
 		</div>
+		<section class="rain"></section>
 		<div class="column dalkur shadow large-3 small-4"><!--menu svæðið-->
 			<div class="small-12 cube-image-div"><!--kassi í menu-->
 				<a href="index.html"><img src="images/cube.png" class="cube-icon"></a> <!-- setja A link inn, annað hvort forsíða eða pop-up -->
