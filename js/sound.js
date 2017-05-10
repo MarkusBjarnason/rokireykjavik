@@ -22,3 +22,13 @@ function playSound(buffer) {
   source.loop = true;                           // play the source now
                                              // note: on older systems, may have to use deprecated noteOn(time);
 }
+
+// function playSecondSound(buffer) {
+//   var source = context.createBufferSource(); // creates a sound source
+//   source.buffer = buffer;                    // tell the source which sound to play
+//   source.connect(gainSecond);
+//   gainSecond.connect(context.destination);       // connect the source to the context's destination (the speakers)
+//   source.start(0);
+//   source.loop = true;                           // play the source now
+//                                              // note: on older systems, may have to use deprecated noteOn(time);
+// }

@@ -249,16 +249,25 @@ knob.bind('mousewheel', function(e){
 
 
   
+
+Draggable.create(".knob", {
+  type: "rotation",
+  throwProps: true,
+    bounds:{minRotation: 0, maxRotation:270},
+  onDrag: function() {
+    console.log(this.rotation)
+    
+  }
+});
+
 let nbDrop = 800; 
 
  loadSound("media/sound/rain-03.mp3");
 
-    // loadSound("media/sound/wind-breeze-02.mp3");
-
 
 gain.gain.value = 0;
 //kóði til þess draga takkana 
-Draggable.create(".knob", {
+Draggable.create(".knob1", {
   type: "rotation",
   throwProps: true,
     bounds:{minRotation: 0, maxRotation:270},
@@ -267,9 +276,11 @@ Draggable.create(".knob", {
     console.log(this.rotation)
     nbDrop = this.rotation*4
     createRain(); 
+    
   }
 });
 
+loadSound("media/sound/wind-breeze-02.mp3");
 
 Draggable.create(".knob2", {
   type: "rotation",
@@ -277,7 +288,7 @@ Draggable.create(".knob2", {
     bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
     console.log(this.rotation)
-    gain.gain.value = this.rotation/270;
+        
 
   }
 });
