@@ -15,12 +15,6 @@ canvas {  /*fyrir three js tening */
 	left: 0;  
 }
 
-.handle-New {
-
-}
-
-
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: #222;
@@ -82,11 +76,11 @@ h1 {
 	margin-top: 15px;
  }
 
-.headlineVolume {
+/*.headlineVolume {
 	position: relative;
 	text-align: center;
 	margin-top: 15px;
-}
+}*/
 
 .headlineSpeed {
 	position: relative;
@@ -171,6 +165,9 @@ h1 {
 	opacity: 0;
 }
 
+
+
+
 /*svg soundIcon */
 section.soundIcon #Layer_1 {
 	fill:none;
@@ -223,6 +220,9 @@ section.soundIcon .st0.l8 {
 		stroke-dashoffset: 0; /*núllstilla*/
 	}
 }
+
+
+
 
 
 
@@ -287,6 +287,14 @@ section.soundIcon .st0.l8 {
 }
 
 
+#volumeIconMenu {
+	position: absolute;
+	width: 50%;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
 
 
 /**********************************************************
@@ -360,6 +368,18 @@ section.hTextWithSoundIcon p {
     animation: emotionText 2s ease-in-out forwards 1s;
 }
 
+
+section.hTextWithSoundIconBlack p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	color: #020202;
+	z-index:1000;
+	width: 100%;
+	max-width: 90px;
+	margin: 50px auto;
+	display:block;
+}
+
 .slider-handle:hover {
     background-color: #dfba89;
 }
@@ -425,8 +445,6 @@ foundation.min.css:2
 	stroke:#ffffff;
 	stroke-width:3;
 	stroke-miterlimit:10;
-	
-
 }
 
 .st90 {

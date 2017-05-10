@@ -6,7 +6,7 @@ Math.radians = function(degrees) {
 
 window.onload = function (event) { // onload er event - TThe onload event occurs when an object has been loaded. 
     //Onload is most often used within the <body> element to execute a script once a web page has completely loaded all content (including images, script files, CSS files, etc.)
-    
+    //gerist eftir að búið er að load síðunni
     // variables 
     var camera, scene, renderer;
     var controls;
@@ -39,12 +39,28 @@ window.onload = function (event) { // onload er event - TThe onload event occurs
         scene.add(camera);
         
         // Stjórna með músarhreyfingu
-        controls = new THREE.OrbitControls(camera, element); //hreyfa cameru og element?
+        controls = new THREE.OrbitControls(camera, element); //sný camerunni renderar elementinu
          controls.addEventListener( 'change', render );
+
+         let takki = document.getElementById("seeMore");
 
             function render(e) {
 
-                console.log(e.target);
+
+                if (camera.position.x < -145.773 && camera.position.y < 1.2624 && camera.position.z < 148.1353 ) {
+                    takki.style.display = "block";
+                    takki.href = "mainsite.html";
+                }
+                else if (camera.position.x > 145.773 && camera.position.y < 1.2624 && camera.position.z < 148.1353 ) { 
+                    takki.style.display = "block";
+                    takki.href = "about.html";    
+                }
+                    else {
+                        takki.style.display = "none";
+                    }
+
+
+                console.log(camera.position);
                   
              }
 
@@ -200,6 +216,9 @@ let knob = $('.knob');
 let angle = 0;
 let minangle = 0;
 let maxangle = 260;
+
+
+
 
 
 function moveKnob(direction) {
