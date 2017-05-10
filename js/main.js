@@ -191,10 +191,10 @@ window.onload = function (event) {
 
 
 
-var knob = $('.knob');
-var angle = 0;
-var minangle = 0;
-var maxangle = 260;
+const knob = $('.knob');
+const angle = 0;
+const minangle = 0;
+const maxangle = 260;
 
 function moveKnob(direction) {
   
@@ -259,6 +259,32 @@ Draggable.create(".knob", {
   }
 });
 
+
+
+// RIGNING 
+
+let nbDrop = 900; 
+
+// function to generate a random number range.
+function randRange( minNum, maxNum) {
+  return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+}
+
+// function to generate drops
+function createRain() {
+
+    for( i=1; i<nbDrop; i++ ) {
+    let dropLeft = randRange(0,1600);
+    let dropTop = randRange(-1000,1400);
+
+    $('.rain').append('<div class="drop" id="drop'+i+'"></div>');
+    $('#drop'+i).css('left',dropLeft);
+    $('#drop'+i).css('top',dropTop);
+    }
+
+}
+// Make it rain
+createRain();
 
 
 
