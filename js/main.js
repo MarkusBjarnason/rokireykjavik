@@ -271,14 +271,20 @@ Draggable.create(".knob", {
 
 
 
-// While dragging the svg element, change the color of the svg
- // document.addEventListener("drag", function(event) {
- //     document.getElementById("rain-icon").{fill:#fff;}
- // });
+Draggable.create(".knob2", {
+  type: "rotation",
+  throwProps: true,
+    bounds:{minRotation: 0, maxRotation:270},
+  onDrag: function() {
+    console.log(this.rotation)
+    
+
+    createRain(); 
+  }
+});
+
 
 // RIGNING 
-
-
 
 // function to generate a random number range.
 function randRange( minNum, maxNum) {
@@ -289,7 +295,7 @@ function randRange( minNum, maxNum) {
 function createRain() {
     $(".rain").html("");
     for( i=1; i<nbDrop; i++ ) {
-    let dropLeft = randRange(0,1600);
+    let dropLeft = randRange(0,1800);
     let dropTop = randRange(-1000,1400);
 
     $('.rain').append('<div class="drop" id="drop'+i+'"></div>');
