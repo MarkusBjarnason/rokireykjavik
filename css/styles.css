@@ -80,6 +80,16 @@ h1 {
  }
 
 
+.headlineVolume {
+	position: absolute;
+	height: auto;
+	top: 780px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
 .center {
 	text-align: center;
 }
@@ -219,7 +229,6 @@ section.soundIcon .st0.l8 {
 	width: 100%;
 	max-width: 90px;
 	margin: 50px auto;
-
 }
 
 
@@ -381,10 +390,10 @@ section.hTextWithSoundIcon p {
 
 .slider {
     position: absolute;
-    width: 200px;
+    width: 195px;
     height: .5rem;
-    top: 600px;
-    right: 150px;
+    top: 780px;
+    right: 0px;
    	/*margin-top: 1.25rem;
    	margin-bottom: 2.25rem;*/
 
