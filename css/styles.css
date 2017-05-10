@@ -280,7 +280,7 @@ section.soundIcon .st0.l8 {
 	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */*/
 }
 
-.knob:after {
+.knob:before {
   	content: "";
     position: absolute;
     bottom: 1%;

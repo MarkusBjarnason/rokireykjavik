@@ -65,17 +65,6 @@ window.onload = function (event) { // onload er event - TThe onload event occurs
              }
 
 
-        // x.x(function(child) {
-        // var y = document.getElementById("#seeMore").selectedIndex * 5 - 10;
-        //   if (y === -10) {
-        //     child.visible = true;
-        //   } else if (child.position.y !== y) {
-        //     child.visible = false;
-        //   } else {
-        //     child.visible = true;
-        //   };
-        // });
-
 
         //setja inn myndir á fletina
         const textureLoader = new THREE.TextureLoader(); //er ekki best að nota const hér?
@@ -105,18 +94,6 @@ window.onload = function (event) { // onload er event - TThe onload event occurs
             plane.position.z= 70;
             scene.add(plane);
         }
-
-
-
-
-
-
-
-
-
-
-         // $("#seeMore").on("update",function(e){
-         //     console.log(e)});
 
 
         function textureLoadAbout(texture) { //flötur með mynd á about síðu
@@ -207,18 +184,10 @@ window.onload = function (event) { // onload er event - TThe onload event occurs
 
 
 
-
-
-
-
-
 let knob = $('.knob');
 let angle = 0;
 let minangle = 0;
 let maxangle = 260;
-
-
-
 
 
 function moveKnob(direction) {
@@ -274,16 +243,25 @@ knob.bind('mousewheel', function(e){
 
 
   
+
+Draggable.create(".knob", {
+  type: "rotation",
+  throwProps: true,
+    bounds:{minRotation: 0, maxRotation:270},
+  onDrag: function() {
+    console.log(this.rotation)
+    
+  }
+});
+
 let nbDrop = 800; 
 
  loadSound("media/sound/rain-03.mp3");
 
-    // loadSound("media/sound/wind-breeze-02.mp3");
-
 
 gain.gain.value = 0;
 //kóði til þess draga takkana 
-Draggable.create(".knob", {
+Draggable.create(".knob1", {
   type: "rotation",
   throwProps: true,
     bounds:{minRotation: 0, maxRotation:270},
@@ -292,17 +270,20 @@ Draggable.create(".knob", {
     console.log(this.rotation)
     nbDrop = this.rotation*4
     createRain(); 
+    
   }
 });
 
+loadSound("media/sound/wind-breeze-02.mp3");
 
 Draggable.create(".knob2", {
   type: "rotation",
   throwProps: true,
     bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
+      
     console.log(this.rotation)
-    gain.gain.value = this.rotation/270;
+        
 
   }
 });
