@@ -6,7 +6,7 @@ Math.radians = function(degrees) {
 
 window.onload = function (event) { // onload er event - TThe onload event occurs when an object has been loaded. 
     //Onload is most often used within the <body> element to execute a script once a web page has completely loaded all content (including images, script files, CSS files, etc.)
-    
+    //gerist eftir að búið er að load síðunni
     // variables 
     var camera, scene, renderer;
     var controls;
@@ -39,12 +39,28 @@ window.onload = function (event) { // onload er event - TThe onload event occurs
         scene.add(camera);
         
         // Stjórna með músarhreyfingu
-        controls = new THREE.OrbitControls(camera, element); //hreyfa cameru og element?
+        controls = new THREE.OrbitControls(camera, element); //sný camerunni renderar elementinu
          controls.addEventListener( 'change', render );
+
+         let takki = document.getElementById("seeMore");
 
             function render(e) {
 
-                console.log(e.target);
+
+                if (camera.position.x < -145.773 && camera.position.y < 1.2624 && camera.position.z < 148.1353 ) {
+                    takki.style.display = "block";
+                    takki.href = "mainsite.html";
+                }
+                else if (camera.position.x > 145.773 && camera.position.y < 1.2624 && camera.position.z < 148.1353 ) { 
+                    takki.style.display = "block";
+                    takki.href = "about.html";    
+                }
+                    else {
+                        takki.style.display = "none";
+                    }
+
+
+                console.log(camera.position);
                   
              }
 
@@ -202,6 +218,9 @@ let minangle = 0;
 let maxangle = 260;
 
 
+
+
+
 function moveKnob(direction) {
   
   if(direction == 'up') {
@@ -259,6 +278,9 @@ let nbDrop = 800;
 
 loadSound("media/sound/rain-03.mp3");
 
+    // loadSound("media/sound/wind-breeze-02.mp3");
+
+
 gain.gain.value = 0;
 //kóði til þess draga takkana 
 Draggable.create(".knob", {
@@ -274,15 +296,19 @@ Draggable.create(".knob", {
 });
 
 
+Draggable.create(".knob2", {
+  type: "rotation",
+  throwProps: true,
+    bounds:{minRotation: 0, maxRotation:270},
+  onDrag: function() {
+    console.log(this.rotation)
+    gain.gain.value = this.rotation/270;
 
-// While dragging the svg element, change the color of the svg
- // document.addEventListener("drag", function(event) {
- //     document.getElementById("rain-icon").{fill:#fff;}
- // });
+  }
+});
+
 
 // RIGNING 
-
-
 
 // function to generate a random number range.
 function randRange( minNum, maxNum) {
@@ -293,7 +319,7 @@ function randRange( minNum, maxNum) {
 function createRain() {
     $(".rain").html("");
     for( i=1; i<nbDrop; i++ ) {
-    let dropLeft = randRange(0,1600);
+    let dropLeft = randRange(0,1800);
     let dropTop = randRange(-1000,1400);
 
     $('.rain').append('<div class="drop" id="drop'+i+'"></div>');
