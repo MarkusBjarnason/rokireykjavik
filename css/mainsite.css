@@ -31,7 +31,8 @@ body {
   text-align: center;
 }
 
-
-
-
+#svgtextinnMB {
+  margin-left: -700px;
+  margin-bottom: -600px;
+}
 
