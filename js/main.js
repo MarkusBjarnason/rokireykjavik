@@ -259,6 +259,9 @@ let nbDrop = 800;
 
 loadSound("media/sound/rain-03.mp3");
 
+    // loadSound("media/sound/wind-breeze-02.mp3");
+
+
 gain.gain.value = 0;
 //kóði til þess draga takkana 
 Draggable.create(".knob", {
@@ -274,16 +277,14 @@ Draggable.create(".knob", {
 });
 
 
-
 Draggable.create(".knob2", {
   type: "rotation",
   throwProps: true,
     bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
     console.log(this.rotation)
-    
+    gain.gain.value = this.rotation/270;
 
-    createRain(); 
   }
 });
 
