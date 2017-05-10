@@ -70,19 +70,16 @@ h1 {
 	margin-top: 15px;
 }
 
-.headlineNoise {
+h1.headlineNoise {
  	position: relative;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 70px;
+	display: block;
  }
 
-/*.headlineVolume {
-	position: relative;
-	text-align: center;
-	margin-top: 15px;
-}*/
 
-.headlineSpeed {
+
+.headlineVolume {
 	position: relative;
 	text-align: center;
 	margin-top: 80px;
@@ -131,7 +128,13 @@ h1 {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     background-color: #F2C94C;
+    display:none;
 }
+
+.button:hover {
+	background-color: orange;
+}
+
 
 /*lóðrétt menu svæði hægri*/
 .cube-row{
@@ -234,10 +237,15 @@ section.soundIcon .st0.l8 {
 	max-width: 90px;
 	margin: 50px auto;
 	display:block;
-	
 }
 
-
+.sound-icon{
+	z-index: 1000;
+	width: 100%;
+	max-width: 90px;
+	margin: 50px auto;
+	display:block;
+}
 
 
 
