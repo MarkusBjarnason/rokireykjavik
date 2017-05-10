@@ -438,11 +438,15 @@ foundation.min.css:2
 	width: 200px;
 	height: auto;
 	z-index: 1000;
+	fill:none;
+	stroke:#ffffff;
+	stroke-width:3;
+	stroke-miterlimit:10;
 	
 
 }
 
-.st0.hwind_1 {
+.st90 {
 	fill:none;
 	stroke:#ffffff;
 	stroke-width:3;
