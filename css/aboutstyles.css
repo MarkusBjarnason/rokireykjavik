@@ -294,10 +294,10 @@ section.soundIcon .st0.l8 {
 	background: linear-gradient(to bottom, #4c4c4c 0%,#474747 6%,#474747 6%,#2b2b2b 42%,#2b2b2b 42%,#2b2b2b 42%,#131313 95%,#131313 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */*/
 
-    border-color: #dfba46;
+    border-color: #F2C94C;
     border-style: solid;
     border-width: 3px;
-    border-color: #dfba46;
+    border-color: #F2C94C;
 }
 
 
@@ -436,16 +436,25 @@ ABOUT SÍÐA --- gat ekki haft þetta undir keyframes- virkaði ekki ....
 }
 
 #about-strong {
-	background-color: #dfba46;	
+	background-color: #F2C94C;	
 	color: #fff;
 	margin-bottom: 40px;
 	padding-top: 3px;
+	border-radius: 4px;
+
+}
+#about-strong:hover {
+	background-color: orange;
+	-moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 .nöfn {
 	margin-top: 2%;
 }
 .gult-x {
-	color: #dfba46;
+	color: #F2C94C;
 }
 .lead {
     font-size: 100%;

@@ -236,7 +236,17 @@ section.soundIcon .st0.l8 {
 	width: 100%;
 	max-width: 90px;
 	margin: 50px auto;
+	margin-bottom: 0px;
 	display:block;
+}
+.menu-text {
+	color: #222;
+	margin-bottom: 40px;
+	margin-top: -10px;
+}
+
+.menu-text:hover {
+	color: orange;
 }
 
 .sound-icon{
