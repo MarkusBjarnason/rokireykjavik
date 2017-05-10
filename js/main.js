@@ -257,12 +257,16 @@ knob.bind('mousewheel', function(e){
   
 let nbDrop = 800; 
 
+loadSound("media/sound/rain-03.mp3");
+
+gain.gain.value = 0;
 //kóði til þess draga takkana 
 Draggable.create(".knob", {
   type: "rotation",
   throwProps: true,
     bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
+    gain.gain.value = this.rotation/270;
     console.log(this.rotation)
     nbDrop = this.rotation*4
     createRain(); 
