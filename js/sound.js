@@ -6,8 +6,8 @@ function loadSound(url) {
   request.responseType = 'arraybuffer';
 
   // Decode asynchronously
-  request.onload = function() {
-    context.decodeAudioData(request.response, function(buffer) {
+  request.onload = () => {
+    context.decodeAudioData(request.response, (buffer) => {
       playSound(buffer);
     });
   }

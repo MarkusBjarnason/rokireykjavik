@@ -305,7 +305,7 @@ Draggable.create(".knob1", {
   }
 });
 
-loadSound("media/sound/wind-breeze-02.mp3");
+// loadSound("media/sound/wind-breeze-02.mp3");
 
 Draggable.create(".knob2", {
   type: "rotation",
@@ -313,7 +313,7 @@ Draggable.create(".knob2", {
     bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
     console.log(this.rotation)
-        
+            
 
   }
 });
@@ -339,13 +339,6 @@ function createRain() {
     }
 
 }
-
-
-
-
-
-
-
 
 
 //Create the controls object
