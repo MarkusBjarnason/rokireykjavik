@@ -21,4 +21,13 @@ body {
   	to {margin-top:900px;}
   }
 
-  
+
+  #turnOnSoundImgMB {
+  padding-top: 55px;
+}
+
+
+#turnOnSoundTextMB {
+  margin-top: -40px;
+  text-align: center;
+}
