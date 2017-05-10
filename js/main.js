@@ -195,15 +195,11 @@ window.onload = function (event) { // onload er event - TThe onload event occurs
 
 
 
-var knob = $('.knob');
-var angle = 0;
-var minangle = 0;
-var maxangle = 260;
 
-const knob = $('.knob');
-const angle = 0;
-const minangle = 0;
-const maxangle = 260;
+let knob = $('.knob');
+let angle = 0;
+let minangle = 0;
+let maxangle = 260;
 
 
 function moveKnob(direction) {
@@ -259,6 +255,8 @@ knob.bind('mousewheel', function(e){
 
 
   
+let nbDrop = 800; 
+
 //kóði til þess draga takkana 
 Draggable.create(".knob", {
   type: "rotation",
@@ -266,6 +264,8 @@ Draggable.create(".knob", {
     bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
     console.log(this.rotation)
+    nbDrop = this.rotation*4
+    createRain(); 
   }
 });
 
@@ -278,7 +278,7 @@ Draggable.create(".knob", {
 
 // RIGNING 
 
-let nbDrop = 900; 
+
 
 // function to generate a random number range.
 function randRange( minNum, maxNum) {
@@ -287,7 +287,7 @@ function randRange( minNum, maxNum) {
 
 // function to generate drops
 function createRain() {
-
+    $(".rain").html("");
     for( i=1; i<nbDrop; i++ ) {
     let dropLeft = randRange(0,1600);
     let dropTop = randRange(-1000,1400);
@@ -298,8 +298,6 @@ function createRain() {
     }
 
 }
-// Make it rain
-createRain();
 
 
 
