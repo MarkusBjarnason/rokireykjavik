@@ -184,16 +184,10 @@ window.onload = function (event) { // onload er event - TThe onload event occurs
 
 
 
-
-
-
 let knob = $('.knob');
 let angle = 0;
 let minangle = 0;
 let maxangle = 260;
-
-
-
 
 
 function moveKnob(direction) {
@@ -287,6 +281,7 @@ Draggable.create(".knob2", {
   throwProps: true,
     bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
+      
     console.log(this.rotation)
         
 
