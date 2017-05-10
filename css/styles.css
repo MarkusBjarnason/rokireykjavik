@@ -431,8 +431,23 @@ foundation.min.css:2
     box-sizing: inherit;
 }
 
+#hwind_1 {
+	position: absolute;
+	top:500px;
+	left:10px;
+	width: 200px;
+	height: auto;
+	z-index: 1000;
+	
 
+}
 
+.st0.hwind_1 {
+	fill:none;
+	stroke:#ffffff;
+	stroke-width:3;
+	stroke-miterlimit:10;
+}
 
 @keyframes emotionText {
 	from {
