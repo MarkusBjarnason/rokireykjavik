@@ -243,6 +243,7 @@ knob.bind('mousewheel', function(e){
 
 
   
+//kóði til þess draga takkana 
 
 Draggable.create(".knob", {
   type: "rotation",
@@ -254,19 +255,21 @@ Draggable.create(".knob", {
   }
 });
 
+/* fjöldi rigningardropa */
 let nbDrop = 800; 
 
- loadSound("media/sound/rain-03.mp3");
 
+/* kóði fyrir rigningartakka */
+loadSound("media/sound/rain-03.mp3");
+// loadSound("media/sound/wind-breeze-02.mp3");
 
-gain.gain.value = 0;
-//kóði til þess draga takkana 
+rainGain.gain.value = 0;
 Draggable.create(".knob1", {
   type: "rotation",
   throwProps: true,
     bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
-    gain.gain.value = this.rotation/270;
+    rainGain.gain.value = this.rotation/270;
     console.log(this.rotation)
     nbDrop = this.rotation*4
     createRain(); 
@@ -274,16 +277,19 @@ Draggable.create(".knob1", {
   }
 });
 
-loadSound("media/sound/wind-breeze-02.mp3");
+
+/** kóði fyrir vindtakka*/
+windGain.gain.value = 0;
 
 Draggable.create(".knob2", {
   type: "rotation",
   throwProps: true,
     bounds:{minRotation: 0, maxRotation:270},
   onDrag: function() {
-      
+    windGain.gain.value = this.rotation/270;
+      $(".drop").css("transform", "rotate("+this.rotation+"deg");
     console.log(this.rotation)
-        
+            
 
   }
 });
@@ -309,13 +315,6 @@ function createRain() {
     }
 
 }
-
-
-
-
-
-
-
 
 
 //Create the controls object
