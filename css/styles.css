@@ -146,7 +146,12 @@ a:hover {
 /*a:active {
 	color: #F2C94C;
 }*/
-
+.cube-row{
+	position: absolute;
+}
+.logo-row{
+	position: absolute;
+}
 .dalkur {
 	background-color: #fff;
 	max-width: 10vw;
@@ -234,11 +239,6 @@ section.soundIcon .st0.l8 {
 
 }
 
-.cube-image-div{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 
 
