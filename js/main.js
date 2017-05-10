@@ -8,9 +8,9 @@ window.onload = function (event) { // onload er event - TThe onload event occurs
     //Onload is most often used within the <body> element to execute a script once a web page has completely loaded all content (including images, script files, CSS files, etc.)
     //gerist eftir að búið er að load síðunni
     // variables 
-    var camera, scene, renderer;
-    var controls;
-    var element, container;
+    let camera, scene, renderer;
+    let controls;
+    let element, container;
     
     // Initialize the scene, cameras, objects
     init();
@@ -276,7 +276,7 @@ knob.bind('mousewheel', function(e){
   
 let nbDrop = 800; 
 
-loadSound("media/sound/rain-03.mp3");
+ loadSound("media/sound/rain-03.mp3");
 
     // loadSound("media/sound/wind-breeze-02.mp3");
 
