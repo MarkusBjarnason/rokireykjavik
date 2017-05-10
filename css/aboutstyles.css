@@ -220,8 +220,9 @@ section.soundIcon .st0.l8 {
 	max-width: 90px;
 	margin: 50px auto;
 	margin-bottom: 0px;
-
+	display: block;
 }
+
 .menu-text {
 	margin-bottom: 40px;
 	margin-top: -10px;
@@ -277,7 +278,6 @@ section.soundIcon .st0.l8 {
 	background: linear-gradient(to bottom, #4c4c4c 0%,#474747 6%,#474747 6%,#2b2b2b 42%,#2b2b2b 42%,#2b2b2b 42%,#131313 95%,#131313 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */*/
 
-<<<<<<< HEAD
 }
 
 .rammi-modal {
@@ -300,8 +300,7 @@ section.soundIcon .st0.l8 {
     border-color: #dfba46;
 }
 
-=======
->>>>>>> c50d2579dc5c83ff73e421a489c3dc6a8ae4e6f3
+
 .knob:after {
   	content: "";
     position: absolute;
