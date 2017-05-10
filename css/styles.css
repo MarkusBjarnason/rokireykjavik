@@ -45,57 +45,40 @@ a:hover {
 	transform: translate(-50%, -50%)
  }
 
+
+h1 {
+	color:020202;
+	font-size: 12px;
+}
+ 
  .headlineRain {
  	position: absolute;
 	height: auto;
-	top: 35%;
+	top: 340px;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%)
  }
 
+.headlineWind {
+	position: absolute;
+	height: auto;
+	top: 480px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
 .headlineNoise {
  	position: absolute;
 	height: auto;
-	top: 66.5%;
+	top: 630px;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
  }
 
-.VolumeOnButton p {
-	font-size: 11px;
-	word-spacing: 60px;
-	position: absolute;
-	height: auto;
-	top: 34%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%)
-}
-
-.Volume2OnButton p {
-	font-size: 11px;
-	word-spacing: 60px;
-	position: absolute;
-	height: auto;
-	top: 49%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%)
-}
-
-.Volume3OnButton p {
-	font-size: 11px;
-	word-spacing: 60px;
-	position: absolute;
-	height: auto;
-	top: 63%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%)
-}
 
 .center {
 	text-align: center;
